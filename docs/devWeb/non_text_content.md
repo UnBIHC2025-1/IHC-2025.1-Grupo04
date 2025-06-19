@@ -11,8 +11,6 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 ## Vídeos e Aúdios
 - [ ] <b> Adicionar legendas</b> para áudio em vídeos existentes. <a id="TEC2" href="#RP2">[2]</a>
 - [x] <b> Evitar conteúdo com <i>flashes</i> (gatilhos para convulsões)</b> ou manter abaixo dos limites. <a id="TEC3" href="#RP3">[3]</a>
-- [x] <b> Evitar autoplay <i></b> para vídeos acima de 3 segundos. <a id="TEC3" href="#RP3">[3]</a>
-- [x] <b> Adicionar um mecanismo para<i></b> pausar, silenciar ou ajustar o volume sem afetar o volume geral do sistema. <a id="TEC3" href="#RP3">[3]</a>
 
 ## Controles
 - [x] <b> Adicionar ``` href ```</b> para links. <a id="TEC4" href="#RP4">[4]</a>
@@ -21,6 +19,9 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [x] <b> Adicionar ```type="button"```</b> nos botões. <a id="TEC4" href="#RP4">[4]</a>
 - [x] <b> Adicionar skip-link </b> (link para pular) para o conteúdo principal. <a id="TEC7" href="#RP7">[7]</a>
 - [x] <b> Identifique e comunique </b> links que abrem em uma nova guia ou janela. <a id="TEC8" href="#RP8">[8]</a>
+- [x] <b> Toda mudança de contexto tem que ser previsível</b>, é iniciada apenas pelo usuário, ou há mecanismos para desativar essas mudanças de contexto. <a id="TEC8" href="#RP8">[8]</a>
+- [x] <b> Toda operação por movimento deve</b>, conter formas para operar de outra forma, ou pode ser desativada pelo usuário.<a id="TEC8" href="#RP8">[8]</a>
+
 
 ## Formulário
 - [x] <b> Adicionar ``` label ```</b> para os campos de entradas associadas ao elemento correspondente. <a id="TEC9" href="#RP9">[9]</a>
@@ -31,7 +32,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] <b> Exibir mensagens de erro e sucesso</b> não só visualmente. <a id="TEC5" href="#RP5">[5]</a>
 
 ## Mídia
-- [x] <b> Impedir ``` autoplay ```</b> para vídeos e audios. <a id="TEC12" href="#RP12">[12]</a>
+- [x] <b> Impedir ``` autoplay ```</b> para vídeos e audios maiores que 3 segundos. <a id="TEC12" href="#RP12">[12]</a>
 - [ ] <b> Adicionar ``` type ```</b> para botões e entradas. <a id="TEC4" href="#RP4">[4]</a>
 - [x] <b> Adicionar pausa </b> para todas as mídias. <a id="TEC13" href="#RP13">[13]</a>
 - [x] <b> Adicionar transcrição </b> para audios. <a id="TEC1" href="#RP1">[1]</a>
@@ -65,7 +66,8 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 ## Tabela
 - [ ] <b> Use o ``` table ``` </b> para elementos em formato de tabela.  <a id="TEC4" href="#RP4">[4]</a>
 - [ ] Insira cabeçalhos para explicar os dados, <b>use ``` th ``` com  ``` scope ``` correto</b>.<a id="TEC15" href="#RP15">[15]</a>
-- [ ] <b> Use o ``` captione ``` </b> lemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a>
+- [ ] <b> Use o ```caption``` </b> elemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a>
+- [ ] <b> Toda tabela complexa,</b> possui uma descrição em texto.<a id="TEC15" href="#RP15">[15]</a>
 
 ## Modais
 - [ ] Deve ser <b> fácil fechar </b>.<a id="TEC19" href="#RP19">[19]</a>

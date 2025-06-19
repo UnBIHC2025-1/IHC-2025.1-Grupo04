@@ -16,6 +16,9 @@
 - [ ] <b> Fontes são fluidas </b> e de fácil entendimento.
 - [ ] Toma o devido cuidado com <b>``` display:none ``` e ``` visibility:hidden ``` para os recursos de tecnologia assistiva</b>
 - [ ] Preferir <b> botões com texto e ícone </b>. E botões apenas com ícones tem o nome acessível.
+- [ ] <b> Elementos interativos têm ≥ 24px ou espaçamento suficiente;</b>.
+ou estão em texto, têm controle equivalente maior, ou seu tamanho é essencial, legal ou definido pelo navegador.
+
 
 ## Animação
 - [ ] <b> Evitar conteúdo que pisque</b>, ou mantenha-o abaixo dos limites. <a id="TEC6" href="#RP6">[6]</a>

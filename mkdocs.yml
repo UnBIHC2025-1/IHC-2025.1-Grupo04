@@ -1,13 +1,13 @@
-repo_url: https://github.com/vitorfleonardo/VerificAAA
-repo_name: VerificAAA
+repo_url: https://github.com/UnBIHC2025-1/IHC-2025.1-Grupo04
+repo_name: IHC-2025.1-Grupo04
 
-site_url: https://github.com/vitorfleonardo/VerificAAA
-site_name: VerificAAA
+site_url: https://github.com/UnBIHC2025-1/IHC-2025.1-Grupo04
+site_name: Check.Acess
 
 use_directory_urls: False
 
 nav:
-  - Início - VerificAAA: 'index.md'
+  - Início - Check.Acess: 'index.md'
 
   - Desenvolvimento Web:
     - Desenvolvimento: 'devWeb/non_text_content.md'
@@ -28,8 +28,8 @@ theme:
   name: readthedocs
   locale: pt_BR
   titles_only: true
-  logo: imagens/logo-verificaaa.png
-  favicon: imagens/logo-verificaaa.png
+  logo: imagens/logo.png
+  favicon: imagens/logo.png
 
 markdown_extensions:
   - def_list

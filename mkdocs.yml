@@ -9,27 +9,40 @@ use_directory_urls: False
 nav:
   - Início - Check.Acess: 'index.md'
 
-  - Desenvolvimento Web:
-    - Desenvolvimento: 'devWeb/non_text_content.md'
+  - Desenvolvimento: 'devWeb/non_text_content.md'
 
-  - Design:
-    - Design: 'design/design.md'
+  - Design: 'design/design.md'
   
-  - Geração de Conteúdo:
-    - Conteúdo: 'geracaoConteudo/conteudo.md'
+  - Geração de Conteúdo: 'geracaoConteudo/conteudo.md'
 
-  - Gestão de Projetos:
-    - Gestão de Projetos: 'gestaoProjeto/gestaoProjeto.md'
+  - Gestão de Projetos: 'gestaoProjeto/gestaoProjeto.md'
 
-  - Ferramentas:
-    - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
+  - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 
 theme:
-  name: readthedocs
-  locale: pt_BR
+  name: material
+  locale: pt-BR
   titles_only: true
-  logo: imagens/logo.png
-  favicon: imagens/logo.png
+  logo: imagens/logo48.png
+  favicon: imagens/logo48.png
+  palette:
+  #Dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: green
+    accent: green
+    toggle:
+      icon: material/weather-night
+      name: Modo escuro
+
+  #White mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: green
+    accent: green
+    toggle:
+      icon: material/weather-sunny
+      name: Modo claro
 
 markdown_extensions:
   - def_list

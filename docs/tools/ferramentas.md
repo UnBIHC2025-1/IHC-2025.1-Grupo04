@@ -1,7 +1,7 @@
 # Ferramentas de Acessibilidade
 
 Para auxiliar e facilitar o desenvolvimento de soluções acessíveis, foram elencadas ferramentas de acessibilidade abaixo. 
-Ir para calculadora de ferramentas(ferramentasCalculadora.html)
+
 
 - [Framework de Testes de Acessibilidade ](https://github.com/google/Accessibility-Test-Framework-for-Android)
 - [Wave - web Accessibility Evaluation Tool](https://wave.webaim.org/)

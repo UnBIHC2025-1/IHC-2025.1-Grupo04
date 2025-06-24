@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Ferramentas de Acessibilidade</title>
+  <style>
+    :root {
+      --cor-primaria: #0077cc;
+      --cor-fundo: #f0f4f8;
+      --cor-card: #ffffff;
+      --cor-texto: #2c3e50;
+      --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background-color: var(--cor-card);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--sombra);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: var(--cor-primaria);
+      margin-bottom: 1rem;
+    }
+
+    form label {
+      font-weight: bold;
+      margin-top: 1.5rem;
+      display: block;
+    }
+
+    .options {
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .options input {
+      margin-right: 0.5rem;
+    }
+
+    button {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background-color: var(--cor-primaria);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    #resultado {
+      margin-top: 2rem;
+    }
+
+    .barra {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+    }
+
+    .barra span {
+      display: block;
+      height: 20px;
+      background-color: var(--cor-primaria);
+      color: white;
+      padding-left: 5px;
+      font-size: 0.8rem;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Ferramentas de Acessibilidade</h1>
+    <h2>Receba recomendações com base no seu caso</h2>
+    <form id="form">
+      <label>1. Você está desenvolvendo para qual plataforma?</label>
+      <div class="options">
+        <input type="radio" name="plataforma" value="web"> Web
+        <input type="radio" name="plataforma" value="android"> Android
+      </div>
+
+      <label>2. Quer realizar auditoria automatizada?</label>
+      <div class="options">
+        <input type="radio" name="auditoria" value="sim"> Sim
+        <input type="radio" name="auditoria" value="nao"> Não
+      </div>
+
+      <label>3. Precisa validar contraste de cores?</label>
+      <div class="options">
+        <input type="radio" name="contraste" value="sim"> Sim
+        <input type="radio" name="contraste" value="nao"> Não
+      </div>
+
+      <label>4. Precisa de um leitor de tela?</label>
+      <div class="options">
+        <input type="radio" name="leitor" value="sim"> Sim
+        <input type="radio" name="leitor" value="nao"> Não
+      </div>
+
+      <label>5. Quer gerar mapa de site visual?</label>
+      <div class="options">
+        <input type="radio" name="sitemap" value="sim"> Sim
+        <input type="radio" name="sitemap" value="nao"> Não
+      </div>
+
+      <label>6. Precisa testar com regras WCAG?</label>
+      <div class="options">
+        <input type="radio" name="wcag" value="sim"> Sim
+        <input type="radio" name="wcag" value="nao"> Não
+      </div>
+
+      <label>7. Deseja testes diretamente no Chrome?</label>
+      <div class="options">
+        <input type="radio" name="chrome" value="sim"> Sim
+        <input type="radio" name="chrome" value="nao"> Não
+      </div>
+
+      <label>8. Deseja integração com testes automatizados?</label>
+      <div class="options">
+        <input type="radio" name="automacao" value="sim"> Sim
+        <input type="radio" name="automacao" value="nao"> Não
+      </div>
+
+      <label>9. Procura por uma caixa de ferramentas completa?</label>
+      <div class="options">
+        <input type="radio" name="caixa" value="sim"> Sim
+        <input type="radio" name="caixa" value="nao"> Não
+      </div>
+
+      <label>10. Precisa de acessibilidade para usuários com baixa visão?</label>
+      <div class="options">
+        <input type="radio" name="visao" value="sim"> Sim
+        <input type="radio" name="visao" value="nao"> Não
+      </div>
+
+      <button type="submit">Ver recomendações</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+  document.getElementById("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const respostas = {};
+    document.querySelectorAll("input[type=radio]:checked").forEach(input => {
+      respostas[input.name] = input.value;
+    });
+
+    const ferramentas = {
+      wave: { nome: "WAVE", url: "https://wave.webaim.org/", pontos: 0 },
+      axe: { nome: "AXE Core", url: "https://github.com/dequelabs/axe-core", pontos: 0 },
+      lighthouse: { nome: "Lighthouse", url: "https://developer.chrome.com/docs/lighthouse", pontos: 0 },
+      contrast: { nome: "WebAIM Contrast Checker", url: "https://webaim.org/resources/contrastchecker/", pontos: 0 },
+      jaws: { nome: "JAWS", url: "https://www.tecassistiva.com.br/catalogo/jaws/", pontos: 0 },
+      dyno: { nome: "DynoVisual Sitemap Generator", url: "https://dynomapper.com/", pontos: 0 },
+      checks: { nome: "ACHECKS", url: "https://www.achecks.org/", pontos: 0 },
+      android: { nome: "Accessibility Test Framework", url: "https://github.com/google/Accessibility-Test-Framework-for-Android", pontos: 0 }
+    };
+
+    if (respostas.plataforma === "web") {
+      ferramentas.wave.pontos += 2;
+      ferramentas.axe.pontos += 2;
+      ferramentas.lighthouse.pontos += 2;
+    } else if (respostas.plataforma === "android") {
+      ferramentas.android.pontos += 3;
+    }
+
+    if (respostas.auditoria === "sim") {
+      ferramentas.axe.pontos += 1;
+      ferramentas.lighthouse.pontos += 1;
+    }
+
+    if (respostas.contraste === "sim" || respostas.visao === "sim") {
+      ferramentas.contrast.pontos += 3;
+    }
+
+    if (respostas.leitor === "sim") ferramentas.jaws.pontos += 3;
+    if (respostas.sitemap === "sim") ferramentas.dyno.pontos += 2;
+    if (respostas.caixa === "sim") ferramentas.checks.pontos += 2;
+    if (respostas.automacao === "sim") ferramentas.axe.pontos += 2;
+
+    const ordenadas = Object.values(ferramentas).sort((a, b) => b.pontos - a.pontos);
+
+    const maxPontos = Math.max(...Object.values(ferramentas).map(f => f.pontos));
+
+    const icones = {
+      "WAVE": "🌊",
+      "AXE Core": "🪓",
+      "Lighthouse": "🔦",
+      "WebAIM Contrast Checker": "🎨",
+      "JAWS": "🗣️",
+      "DynoVisual Sitemap Generator": "🗺️",
+      "ACHECKS": "🧰",
+      "Accessibility Test Framework": "🤖"
+    };
+
+    let html = `<p style="color:#111; font-weight:bold;">Ranking de Ferramentas Recomendadas:</p>`;
+    html += `<div>`;
+
+    ordenadas.forEach((f, index) => {
+      const pontosNormalizados = maxPontos > 0 ? (f.pontos / maxPontos) * 5 : 0;
+      const largura = (pontosNormalizados / 5) * 100;
+      const pontosFormatado = pontosNormalizados.toFixed(1);
+
+      const medalha = index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : "";
+      const icone = icones[f.nome] || "";
+
+      html += `
+        <div class="barra" style="background-color: #e6e6e6; border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
+          <span class="barra-preenchida" style="
+            display: block;
+            width: 0;
+            background-color: #004080;
+            color: #fff;
+            font-weight: bold;
+            padding: 0.5px 8px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            border-radius: 8px 0 0 8px;
+            ">
+            ${medalha} ${icone} ${f.nome} (${pontosFormatado} pts)
+          </span>
+        </div>`;
+    });
+
+    html += `</div>`;
+    document.getElementById("resultado").innerHTML = html;
+
+    // Animação da largura (com delay para parecer suave)
+    const barras = document.querySelectorAll(".barra-preenchida");
+    barras.forEach((barra, i) => {
+      const pontosNormalizados = maxPontos > 0 ? (ordenadas[i].pontos / maxPontos) * 5 : 0;
+      const largura = (pontosNormalizados / 5) * 100;
+      setTimeout(() => {
+        barra.style.transition = "width 1s ease-in-out";
+        barra.style.width = largura + "%";
+      }, 100);
+    });
+
+  });
+  </script>
+</body>
+</html>

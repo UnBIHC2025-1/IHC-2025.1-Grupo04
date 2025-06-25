@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Acessível - Redimensionamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blog Acessível</h1>
+    <div class="font-controls" role="group" aria-label="Controles de Fonte">
+      <button onclick="ajustarFonte('aumentar')" aria-label="Aumentar texto">A+</button>
+      <button onclick="ajustarFonte('diminuir')" aria-label="Diminuir texto">A−</button>
+      <button onclick="ajustarFonte('padrao')" aria-label="Redefinir texto">A</button>
+    </div>
+  </header>
+
+  <main>
+
+    <article>
+      <h2>Notícia de Última Hora</h2>
+      <p>
+        A acessibilidade digital está ganhando destaque entre desenvolvedores. Grandes portais,
+        como G1 e UOL, estão cada vez mais preocupados com o acesso universal à informação.
+      </p>
+      <p>
+        Estudos apontam que usuários com deficiência representam um público com alto potencial de engajamento,
+        desde que o conteúdo seja apresentado de forma inclusiva.
+      </p>
+    </article>
+
+    <article class="blog-post">
+      <header>
+        <h2>Inovação Acessível: Smartphones para Todos</h2>
+        <img src="img/Inovação Acessível Smartphones para Todos.png" style="max-width: 100%; max-height: 50%;" alt="Pessoas diversas segurando seu próprio telefone"/>
+        <p class="post-meta">Publicado em <time datetime="2024-06-20">20 de junho de 2024</time> por <span class="author">TecnoInclusão</span></p>
+      </header>
+      <section>
+        <p>
+          Os avanços na tecnologia de smartphones estão cada vez mais focados em acessibilidade. Novos recursos como leitura de tela aprimorada, reconhecimento de gestos e personalização de interfaces estão tornando os dispositivos móveis verdadeiramente inclusivos. Empresas líderes no setor estão investindo pesado em pesquisa e desenvolvimento para garantir que seus produtos atendam às diversas necessidades dos usuários, desde deficientes visuais até aqueles com dificuldades motoras.
+        </p>
+        <p>
+          Essa evolução não só abre portas para um público mais amplo, mas também estimula a inovação, mostrando que design inclusivo é sinônimo de design inteligente.
+        </p>
+      </section>
+    </article>
+
+    <article class="blog-post">
+      <header>
+        <h2>O Futuro do Trabalho: Acessibilidade Digital no Home Office</h2>
+        <img src="img/futuro.png" style="max-width: 100%; max-height: 50%;" alt="Mulher sentada na cadeira interagindo com alta tecnologia"/>
+        <p class="post-meta">Publicado em <time datetime="2024-06-15">15 de junho de 2024</time> por <span class="author">Carreira Inclusiva</span></p>
+      </header>
+      <section>
+        <p>
+          Com a crescente popularidade do home office, a acessibilidade digital nas ferramentas de colaboração e comunicação tornou-se mais crucial do que nunca. Empresas que adotam plataformas acessíveis para reuniões virtuais, gestão de projetos e comunicação interna estão garantindo que todos os seus colaboradores, incluindo aqueles com deficiência, possam participar plenamente e contribuir de forma equitativa.
+        </p>
+        <p>
+          Investir em software e práticas acessíveis para o ambiente de trabalho remoto não é apenas uma questão de conformidade, mas uma estratégia para reter talentos e promover uma cultura organizacional verdadeiramente diversa e inclusiva.
+        </p>
+      </section>
+    </article>
+
+    <article class="blog-post">
+      <header>
+        <h2>Games Acessíveis: Uma Revolução para Gamers com Deficiência</h2>
+        <img src="img/games.png" style="max-width: 100%; max-height: 50%;" alt="Diferentes pessoas jogando games em diferentes plataformas"/>
+        <p class="post-meta">Publicado em <time datetime="2024-06-10">10 de junho de 2024</time> por <span class="author">GameDev Acessível</span></p>
+      </header>
+      <section>
+        <p>
+          A indústria de videogames está finalmente acordando para a importância da acessibilidade. Desenvolvedores estão incorporando opções como remapeamento de controles, legendas personalizáveis, modos de alto contraste e até áudio-descrição, permitindo que gamers com diferentes tipos de deficiência desfrutem de seus títulos favoritos.
+        </p>
+        <p>
+          Essa mudança é impulsionada tanto pela demanda dos jogadores quanto pela percepção de que a inclusão amplia o mercado. Grandes estúdios já estão implementando diretrizes de acessibilidade desde as fases iniciais de desenvolvimento, prometendo um futuro mais divertido para todos.
+        </p>
+      </section>
+    </article>
+
+    <aside class="sidebar">
+        <h3>Outros Artigos Relevantes</h3>
+        <ul>
+            <li><a href="#">Navegação por Teclado: Além do Mouse</a></li>
+            <li><a href="#">Contraste de Cores: Por Que é Tão Importante?</a></li>
+            <li><a href="#">A Importância das Descrições de Imagem (Alt Text)</a></li>
+        </ul>
+
+        <h3>Notícia da Comunidade</h3>
+        <p>
+          A comunidade de acessibilidade digital no Brasil está crescendo! Fique atento aos próximos eventos e webinars sobre as novidades da WCAG 2.2 e as melhores práticas de desenvolvimento inclusivo.
+        </p>
+        <p>
+          Estudos recentes indicam que empresas que investem em acessibilidade não só alcançam um público maior, mas também melhoram a reputação da marca e a satisfação do cliente.
+        </p>
+    </aside>
+
+    <article>
+      <h2>Zoom e Refluxo em Páginas Web</h2>
+
+      <h3>WCAG, 1.4.4 (Redimensionamento de Texto (nível AA))</h3>
+
+      <p>
+        Todas as pessoas devem conseguir ampliar o conteúdo em até 200%
+        sem perder acesso às funcionalidades e conteúdo.
+      </p>
+
+      <h3>WCAG 1.4.10 (Refluxo (Reflow) (nível AA))</h3>
+
+      <p>
+        Ela estabelece que o conteúdo deve ser apresentável sem a necessidade de rolagem 
+        bidimensional (horizontal e vertical) para visualizá-lo, quando ampliado em até 400%. Com exeção de layouts bidimencionais 
+        (como mapas, tabelas de dados ou imagens muito grandes).
+      </p>
+
+      <p>
+        Teste esta página usando os controles acima ou utilizando
+        <strong>Ctrl + + / -</strong> ou <strong>Ctrl + Scroll</strong>.
+      </p>
+      <p>
+        Este conteúdo também se ajusta ao tamanho da tela, mesmo em celulares e ao aplicar zoom.
+      </p>
+    </article>
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

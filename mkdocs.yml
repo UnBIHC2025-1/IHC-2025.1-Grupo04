@@ -25,14 +25,15 @@ theme:
   logo: imagens/logo48.png
   favicon: imagens/logo48.png
   palette:
+
   #Dark mode
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
     primary: green
     accent: green
     toggle:
-      icon: material/weather-night
-      name: Modo escuro
+      icon: material/weather-sunny
+      name: Mudar Para Modo escuro
 
   #White mode
   - media: "(prefers-color-scheme: light)"
@@ -40,8 +41,8 @@ theme:
     primary: green
     accent: green
     toggle:
-      icon: material/weather-sunny
-      name: Modo claro
+      icon: material/weather-night
+      name: Mudar Para Modo claro
 
 markdown_extensions:
   - def_list

@@ -15,7 +15,7 @@ Para auxiliar e facilitar o desenvolvimento de soluções acessíveis, foram ele
 <div style="margin-top: 2rem;">
     <a href="ferramentasCalculadora.html" aria-label="Acessar calculadora de recomendação de ferramentas">
       <button style="
-        background-color: #004080;
+        background-color: #4cae4f;
         color: white;
         padding: 12px 24px;
         font-size: 1rem;

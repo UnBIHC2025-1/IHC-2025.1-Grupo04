@@ -6,52 +6,19 @@
   <title>Calculadora de Ferramentas de Acessibilidade</title>
   <style>
     :root {
-      --cor-primaria: #0077cc;
-      --cor-fundo: #f0f4f8;
-      --cor-card: #ffffff;
-      --cor-texto: #2c3e50;
+      --cor-primaria: #4cae4f;
+      /* --cor-fundo: #f0f4f8; */
+      /* --cor-card: #ffffff; */
+      --cor-texto:rgb(255, 255, 255);
       --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--cor-fundo);
-      color: var(--cor-texto);
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    options {
+      margin: 0.5rem 1.5rem;
     }
 
-    .container {
-      max-width: 800px;
-      width: 100%;
-      background-color: var(--cor-card);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: var(--sombra);
-    }
-
-    h1, h2 {
-      text-align: center;
-      color: var(--cor-primaria);
-      margin-bottom: 1rem;
-    }
-
-    form label {
-      font-weight: bold;
-      margin-top: 1.5rem;
-      display: block;
-    }
-
-    .options {
-      margin: 0.5rem 0 1.5rem;
-    }
-
-    .options input {
-      margin-right: 0.5rem;
+    input[type="radio"]:checked {
+      accent-color: green;
     }
 
     button {
@@ -68,30 +35,14 @@
     }
 
     button:hover {
-      background-color: #005fa3;
+      background-color:rgb(50, 114, 52);
     }
 
     #resultado {
       margin-top: 2rem;
     }
-
-    .barra {
-      background-color: #e0e0e0;
-      border-radius: 10px;
-      margin-bottom: 0.5rem;
-      overflow: hidden;
-    }
-
-    .barra span {
-      display: block;
-      height: 20px;
-      background-color: var(--cor-primaria);
-      color: white;
-      padding-left: 5px;
-      font-size: 0.8rem;
-      line-height: 20px;
-    }
   </style>
+  
 </head>
 <body>
   <div class="container">
@@ -221,7 +172,7 @@
       "Accessibility Test Framework": "🤖"
     };
 
-    let html = `<p style="color:#111; font-weight:bold;">Ranking de Ferramentas Recomendadas:</p>`;
+    let html = `<p font-weight:bold;">Ranking de Ferramentas Recomendadas:</p>`;
     html += `<div>`;
 
     ordenadas.forEach((f, index) => {
@@ -233,7 +184,7 @@
       const icone = icones[f.nome] || "";
 
       html += `
-        <div class="barra" style="background-color: #e6e6e6; border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
+        <div class="barra" style="background-color:rgb(105, 105, 105); border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
           <span class="barra-preenchida" style="
             display: block;
             width: 0;

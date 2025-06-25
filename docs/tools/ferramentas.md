@@ -12,7 +12,7 @@ Para auxiliar e facilitar o desenvolvimento de soluções acessíveis, foram ele
 - [Lighthouse - Google - Auditar acessibilidade](https://developer.chrome.com/docs/lighthouse)
 - [WebAim - Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
-<div style="margin-top: 2rem; margin-bottom: 2rem;">
+<div style="margin-top: 2rem;">
     <a href="ferramentasCalculadora.html" aria-label="Acessar calculadora de recomendação de ferramentas">
       <button style="
         background-color: #004080;
@@ -26,4 +26,5 @@ Para auxiliar e facilitar o desenvolvimento de soluções acessíveis, foram ele
         ➕ Usar Calculadora de Acessibilidade
       </button>
     </a>
-  </div>
+</div>
+

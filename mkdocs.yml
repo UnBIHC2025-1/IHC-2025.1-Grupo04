@@ -21,7 +21,6 @@ nav:
 
 theme:
   name: material
-  locale: pt-BR
   titles_only: true
   logo: imagens/logo48.png
   favicon: imagens/logo48.png

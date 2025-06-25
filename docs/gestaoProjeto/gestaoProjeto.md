@@ -112,3 +112,5 @@ Em seu planejamento, há...
 > </a> MORDOR INTELLIGENCE. Digital Accessibility Software Market Size & Share Analysis- Growth Trends & Forecasts (2024-2029). Disponível em: [https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market](https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market). Acesso em: 9 Mai. 2024
 
 > </a> WORLD WIDE WEB CONSORTIUM. Web Content Accessibility Guidelines (WCAG) 2.1. Recomendação W3C, 21 setembro 2023. Disponível em: [https://www.w3.org/TR/WCAG21/#sotd](https://www.w3.org/TR/WCAG21/#sotd). Acesso em: 9 Mai. 2024
+
+> </a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS.** *ABNT NBR ISO/IEC 17225:2025 – Tecnologia da informação – Acessibilidade – Diretrizes para avaliação da acessibilidade de produtos e serviços de tecnologia da informação e comunicação (TIC).* Rio de Janeiro: ABNT, 2025. Acesso em: 24 Jun. 2025.

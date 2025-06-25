@@ -20,8 +20,8 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] <b> Adicionar ```type="button"```</b> nos botões. <a id="TEC4" href="#RP4">[4]</a>
 - [ ] <b> Adicionar skip-link </b> (link para pular) para o conteúdo principal. <a id="TEC7" href="#RP7">[7]</a>
 - [ ] <b> Identifique e comunique </b> links que abrem em uma nova guia ou janela. <a id="TEC8" href="#RP8">[8]</a>
-- [ ] <b> Toda mudança de contexto tem que ser previsível</b>, é iniciada apenas pelo usuário, ou há mecanismos para desativar essas mudanças de contexto. <a id="TEC8" href="#RP8">[8]</a>
-- [ ] <b> Toda operação por movimento deve</b>, conter formas para operar de outra forma, ou pode ser desativada pelo usuário.<a id="TEC8" href="#RP8">[8]</a>
+- [ ] <b> Toda mudança de contexto tem que ser previsível</b>, é iniciada apenas pelo usuário, ou há mecanismos para desativar essas mudanças de contexto.<b>  NBR 5.8.8 </b>
+- [ ] <b> Toda operação por movimento deve</b>, conter formas para operar de outra forma, ou pode ser desativada pelo usuário.<b>  NBR 5.8.13 </b>
 
 
 ## Formulário
@@ -68,7 +68,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] <b> Use o ``` table ``` </b> para elementos em formato de tabela.  <a id="TEC4" href="#RP4">[4]</a>
 - [ ] Insira cabeçalhos para explicar os dados, <b>use ``` th ``` com  ``` scope ``` correto</b>.<a id="TEC15" href="#RP15">[15]</a>
 - [ ] <b> Use o ```caption``` </b> elemento para fornecer um título para a tabela.<a id="TEC17" href="#RP17">[17]</a>
-- [ ] <b> Toda tabela complexa,</b> possui uma descrição em texto.<a id="TEC15" href="#RP15">[15]</a>
+- [ ] <b> Toda tabela complexa,</b> possui uma descrição em texto.<b>  NBR 5.6.6 </b>
 
 ## Modais
 - [ ] Deve ser <b> fácil fechar </b>.<a id="TEC19" href="#RP19">[19]</a>
@@ -185,3 +185,5 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 ## Bibliografia
 
 > </a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
+
+> </a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS.** *ABNT NBR ISO/IEC 17225:2025 – Tecnologia da informação – Acessibilidade – Diretrizes para avaliação da acessibilidade de produtos e serviços de tecnologia da informação e comunicação (TIC).* Rio de Janeiro: ABNT, 2025. Acesso em: 24 Jun. 2025.

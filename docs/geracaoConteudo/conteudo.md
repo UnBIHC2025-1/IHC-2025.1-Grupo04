@@ -103,3 +103,5 @@
 ## Bibliografia
 
 > <a id="RP1" href="#TEC1"></a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
+
+> </a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS.** *ABNT NBR ISO/IEC 17225:2025 – Tecnologia da informação – Acessibilidade – Diretrizes para avaliação da acessibilidade de produtos e serviços de tecnologia da informação e comunicação (TIC).* Rio de Janeiro: ABNT, 2025. Acesso em: 24 Jun. 2025.

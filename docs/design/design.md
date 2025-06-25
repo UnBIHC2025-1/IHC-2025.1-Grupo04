@@ -17,7 +17,7 @@
 - [ ] Toma o devido cuidado com <b>``` display:none ``` e ``` visibility:hidden ``` para os recursos de tecnologia assistiva</b>
 - [ ] Preferir <b> botões com texto e ícone </b>. E botões apenas com ícones tem o nome acessível.
 - [ ] <b> Elementos interativos têm ≥ 24px ou espaçamento suficiente;</b>.
-ou estão em texto, têm controle equivalente maior, ou seu tamanho é essencial, legal ou definido pelo navegador.
+ou estão em texto, têm controle equivalente maior, ou seu tamanho é essencial, legal ou definido pelo navegador <b>  NBR 5.8.7 </b>
 
 
 ## Animação
@@ -108,3 +108,5 @@ ou estão em texto, têm controle equivalente maior, ou seu tamanho é essencial
 ## Bibliografia
 
 > </a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
+
+> </a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS.** *ABNT NBR ISO/IEC 17225:2025 – Tecnologia da informação – Acessibilidade – Diretrizes para avaliação da acessibilidade de produtos e serviços de tecnologia da informação e comunicação (TIC).* Rio de Janeiro: ABNT, 2025. Acesso em: 24 Jun. 2025.

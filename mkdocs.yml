@@ -19,6 +19,8 @@ nav:
 
   - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 
+  - Do e Donot: 'do-donot/do-donot.md'
+
 theme:
   name: material
   language: pt-BR

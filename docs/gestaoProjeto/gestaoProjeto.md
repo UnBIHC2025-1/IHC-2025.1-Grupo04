@@ -48,6 +48,57 @@ Em seu planejamento, há...
 - [ ] Recursos alocados (pessoas, softwares, cursos, tarefas)?
 - [ ] Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG)?
 
+<canvas id="graficoChecklist" style="max-width: 300px; margin: auto;"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  function contarCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const feitos = [...checkboxes].filter(cb => cb.checked).length;
+    const pendentes = (checkboxes.length - 3) - feitos; // checkboxes.length esta retornando 3 num acima. fix pra depois!
+    return [feitos, pendentes];
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('graficoChecklist').getContext('2d');
+
+    const [feitos, pendentes] = contarCheckboxes();
+
+    const chart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Selecionados', 'Não Selecionados'],
+        datasets: [{
+          data: [feitos, pendentes],
+          backgroundColor: ['#4cae4f', '#992a23']
+        }]
+      },
+      options: {
+        responsive: true,
+        width: 300,
+        height: 300,  
+        plugins: {
+          legend: {
+            position: 'bottom'
+          },
+          title: {
+            display: true,
+            text: 'Contagem de Marcações'
+          }
+        }
+      }
+    });
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const [atualFeitos, atualPendentes] = contarCheckboxes();
+        chart.data.datasets[0].data = [atualFeitos, atualPendentes];
+        chart.update();
+      });
+    });
+  });
+</script>
+
 ## Referências Bibliográficas
 
 > <a id="RP1" href="#TEC1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.

@@ -4,50 +4,50 @@
 testes e padronizações. Também é importante que a equipe saiba como as pessoas com deficiência usam os sítios web e aplicativos". Nesse caso, foram incluídas técnicas relacionadas ao desenvolvimento e também formas de verificar.
 
 ## Imagens
-- [x] <b> Adicionar ``` alt ``` </b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a id="TEC1" href="#RP1">[1]</a>
+- [ ] <b> Adicionar ``` alt ``` </b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a id="TEC1" href="#RP1">[1]</a>
 - [ ] <b> Adicionar ``` alt="" ``` </b> para imagens decorativas que não tem significado. <a id="TEC1" href="#RP1">[1]</a>
 - [ ] <b> Incluir a descrição no ``` alt ```</b> para imagens que contém texto. <a id="TEC1" href="#RP1">[1]</a>
 
 ## Vídeos e Áudios
 - [ ] <b> Adicionar legendas</b> para áudio em vídeos existentes. <a id="TEC2" href="#RP2">[2]</a>
-- [x] <b> Evitar conteúdo com <i>flashes</i> (gatilhos para convulsões)</b> ou manter abaixo dos limites. <a id="TEC3" href="#RP3">[3]</a>
+- [ ] <b> Evitar conteúdo com <i>flashes</i> (gatilhos para convulsões)</b> ou manter abaixo dos limites. <a id="TEC3" href="#RP3">[3]</a>
 
 ## Controles
-- [x] <b> Adicionar ``` href ```</b> para links. <a id="TEC4" href="#RP4">[4]</a>
-- [x] <b> Adicionar underline</b> nos links. <a id="TEC5" href="#RP5">[5]</a>
-- [x] <b> Adicionar estados de foco</b> em campos de entrada, botões, e elementos interativos. <a id="TEC6" href="#RP6">[6]</a>
-- [x] <b> Adicionar ```type="button"```</b> nos botões. <a id="TEC4" href="#RP4">[4]</a>
-- [x] <b> Adicionar skip-link </b> (link para pular) para o conteúdo principal. <a id="TEC7" href="#RP7">[7]</a>
-- [x] <b> Identifique e comunique </b> links que abrem em uma nova guia ou janela. <a id="TEC8" href="#RP8">[8]</a>
-- [x] <b> Toda mudança de contexto tem que ser previsível</b>, é iniciada apenas pelo usuário, ou há mecanismos para desativar essas mudanças de contexto. <a id="TEC8" href="#RP8">[8]</a>
-- [x] <b> Toda operação por movimento deve</b>, conter formas para operar de outra forma, ou pode ser desativada pelo usuário.<a id="TEC8" href="#RP8">[8]</a>
+- [ ] <b> Adicionar ``` href ```</b> para links. <a id="TEC4" href="#RP4">[4]</a>
+- [ ] <b> Adicionar underline</b> nos links. <a id="TEC5" href="#RP5">[5]</a>
+- [ ] <b> Adicionar estados de foco</b> em campos de entrada, botões, e elementos interativos. <a id="TEC6" href="#RP6">[6]</a>
+- [ ] <b> Adicionar ```type="button"```</b> nos botões. <a id="TEC4" href="#RP4">[4]</a>
+- [ ] <b> Adicionar skip-link </b> (link para pular) para o conteúdo principal. <a id="TEC7" href="#RP7">[7]</a>
+- [ ] <b> Identifique e comunique </b> links que abrem em uma nova guia ou janela. <a id="TEC8" href="#RP8">[8]</a>
+- [ ] <b> Toda mudança de contexto tem que ser previsível</b>, é iniciada apenas pelo usuário, ou há mecanismos para desativar essas mudanças de contexto. <a id="TEC8" href="#RP8">[8]</a>
+- [ ] <b> Toda operação por movimento deve</b>, conter formas para operar de outra forma, ou pode ser desativada pelo usuário.<a id="TEC8" href="#RP8">[8]</a>
 
 
 ## Formulário
-- [x] <b> Adicionar ``` label ```</b> para os campos de entradas associadas ao elemento correspondente. <a id="TEC9" href="#RP9">[9]</a>
+- [ ] <b> Adicionar ``` label ```</b> para os campos de entradas associadas ao elemento correspondente. <a id="TEC9" href="#RP9">[9]</a>
 - [ ] <b> Adicionar ``` <fildset> ``` e ``` <legend> ```</b> para seção no formulário. <a id="TEC4" href="#RP4">[4]</a>
-- [x] <b> Adicionar ``` autocomplete ```</b> para campos de entrada. <a id="TEC10" href="#RP10">[10]</a>
+- [ ] <b> Adicionar ``` autocomplete ```</b> para campos de entrada. <a id="TEC10" href="#RP10">[10]</a>
 - [ ] <b> Exibir ``` errors ``` </b> (erros) de entrada acima do formulário, após envio. <a id="TEC11" href="#RP11">[11]</a>
-- [x] <b> Adicionar ``` aria-describedby ```</b> para os campos de entrada. <a id="TEC11" href="#RP11">[11]</a>
-- [ ] <b> Exibir mensagens de erro e sucesso</b> não só visualmente. <a id="TEC5" href="#RP5">[5]</a>
+- [ ] <b> Adicionar ``` aria-describedby ```</b> para os campos de entrada. <a id="TEC11" href="#RP11">[11]</a>
+- [ ] <b> E ibir mensagens de erro e sucesso</b> não só visualmente. <a id="TEC5" href="#RP5">[5]</a>
 
 ## Mídia
-- [x] <b> Impedir ``` autoplay ```</b> para vídeos e audios maiores que 3 segundos. <a id="TEC12" href="#RP12">[12]</a>
+- [ ] <b> Impedir ``` autoplay ```</b> para vídeos e audios maiores que 3 segundos. <a id="TEC12" href="#RP12">[12]</a>
 - [ ] <b> Adicionar ``` type ```</b> para botões e entradas. <a id="TEC4" href="#RP4">[4]</a>
-- [x] <b> Adicionar pausa </b> para todas as mídias. <a id="TEC13" href="#RP13">[13]</a>
-- [x] <b> Adicionar transcrição </b> para audios. <a id="TEC1" href="#RP1">[1]</a>
+- [ ] <b> Adicionar pausa </b> para todas as mídias. <a id="TEC13" href="#RP13">[13]</a>
+- [ ] <b> Adicionar transcrição </b> para audios. <a id="TEC1" href="#RP1">[1]</a>
 
 ## Semântica
-- [x] Uso de elementos <b>nativos HTML</b>. 
-- [x] Fluxo continuo e <b>Lógico</b>. 
-- [x] Tem <b>descrições</b> que podem ser <b>facilmente compreendidas</b>. 
-- [x] Tem a <b>semântica correta</b>. 
-- [x] É <b>objetivo</b> nos <b>rótulos</b>. 
+- [ ] Uso de elementos <b>nativos HTML</b>. 
+- [ ] Fluxo continuo e <b>Lógico</b>. 
+- [ ] Tem <b>descrições</b> que podem ser <b>facilmente compreendidas</b>. 
+- [ ] Tem a <b>semântica correta</b>. 
+- [ ] É <b>objetivo</b> nos <b>rótulos</b>. 
 
 ## Texto
 - [ ] <b>Evitar</b> o uso de <b>textos dentro de imagens</b>. 
-- [x] <b>Redimensiona os textos na página</b>, aumentando o zoom em até 200%. 
-- [x] <b>Alturas </b> das fontes <b> não é fixa </b>. 
+- [ ] <b>Redimensiona os textos na página</b>, aumentando o zoom em até 200%. 
+- [ ] <b>Alturas </b> das fontes <b> não é fixa </b>. 
 
 ## Teclado
 - [ ] <b> Funcionalidades </b> da página web estão <b> disponíveis por teclado </b>. 
@@ -89,6 +89,57 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] Áreas clicáveis com no mínimo <b> 44px (pixels) de altura e 44px de largura </b>.
 - [ ] No caso de <b>captcha</b> garanta que seja simples de entender e tenha alternativas para pessoas com deficiência.
 - [ ] Incluir um <b> campo de busca </b>.
+
+<canvas id="graficoChecklist" style="max-width: 300px; margin: auto;"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  function contarCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const feitos = [...checkboxes].filter(cb => cb.checked).length;
+    const pendentes = (checkboxes.length - 3) - feitos; // checkboxes.length esta retornando 3 num acima. fix pra depois!
+    return [feitos, pendentes];
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('graficoChecklist').getContext('2d');
+
+    const [feitos, pendentes] = contarCheckboxes();
+
+    const chart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Selecionados', 'Não Selecionados'],
+        datasets: [{
+          data: [feitos, pendentes],
+          backgroundColor: ['#4cae4f', '#992a23']
+        }]
+      },
+      options: {
+        responsive: true,
+        width: 300,
+        height: 300,  
+        plugins: {
+          legend: {
+            position: 'bottom'
+          },
+          title: {
+            display: true,
+            text: 'Contagem de Marcações'
+          }
+        }
+      }
+    });
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const [atualFeitos, atualPendentes] = contarCheckboxes();
+        chart.data.datasets[0].data = [atualFeitos, atualPendentes];
+        chart.update();
+      });
+    });
+  });
+</script>
 
 ## Referência Bibliográfica
 

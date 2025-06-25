@@ -69,7 +69,7 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 **Legenda:**
 “Pensar em uma internet acessível pra todo mundo é a gente garantir que as pessoas, com ou sem deficiência, vão ter acesso a qualquer tipo de informação, em qualquer contexto.”
 
-## Depoimento - Valter Lenine (WPT)
+### Depoimento - Valter Lenine (WPT)
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/BWa19aYVBRM?list=PLGBeQBPkoih47wcbPqc7A2ll47FTBb7y-" title="WPT | Depoimento Valter Lenine (com audiodescrição)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -77,8 +77,14 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 “Sou usuário também de Libras e um surdo oralizado, mas, principalmente, eu sinto a necessidade de sites que utilizem legendas em relação aos conteúdos, principalmente de vídeos.”
 
 
-### Fontes
 
-https://mwpt.com.br/depoimentos/
+##  Referências de Depoimentos Reais
+
+- [MWPT – Depoimentos sobre Acessibilidade Digital](https://mwpt.com.br/depoimentos/)
+- [YouTube – Depoimento Alexandre Ohkawa (WPT)](https://www.youtube.com/watch?v=pLNoYOxP-9U)
+- [YouTube – Depoimento sobre deficiência visual e tecnologia -- Renato Kimura](https://www.youtube.com/watch?v=biv74pYXQWk)
+- [YouTube – Depoimento Valter Lenine](https://www.youtube.com/watch?v=BWa19aYVBRM&list=PLGBeQBPkoih47wcbPqc7A2ll47FTBb7y-)
+
+
 
 > _Esta página faz parte do Pocket de Acessibilidade desenvolvido pelo Grupo 04 – IHC/UnB 2025.1_

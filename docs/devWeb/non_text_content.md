@@ -4,6 +4,7 @@
 testes e padronizações. Também é importante que a equipe saiba como as pessoas com deficiência usam os sítios web e aplicativos". Nesse caso, foram incluídas técnicas relacionadas ao desenvolvimento e também formas de verificar.
 
 ## Imagens
+
 - [ ] <b> Adicionar ``` alt ``` </b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a id="TEC1" href="#RP1">[1]</a>
 - [ ] <b> Adicionar ``` alt="" ``` </b> para imagens decorativas que não tem significado. <a id="TEC1" href="#RP1">[1]</a>
 - [ ] <b> Incluir a descrição no ``` alt ```</b> para imagens que contém texto. <a id="TEC1" href="#RP1">[1]</a>
@@ -52,7 +53,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 ## Teclado
 - [ ] <b> Funcionalidades </b> da página web estão <b> disponíveis por teclado </b>. 
 - [ ] Quando se tem o <b>mouseover é permitido o uso de teclado </b>. 
-- [ ] <b>Foco visível</b> remova elementos focalizáveis ​​invisíveis. 
+- [ ] <b>Foco visível</b> remova elementos focalizáveis invisíveis. 
 - [ ] Adicione o <b> ``` .hover, .focus { } ```</b>  para tornar o foco visível. 
 - [ ] Permite/visa o uso de <b> Atalhos de teclado </b> como o ```TAB```. 
 - [ ] <b> Primeiro </b> item interativo da página é um link para o <b> conteúdo principal </b>. 

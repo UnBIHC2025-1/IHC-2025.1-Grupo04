@@ -1,35 +1,35 @@
-# Do e Donot
-
+# Do e Don't
+A seção DO e DON'T tem como objetivo orientar visualmente e de forma prática os comportamentos recomendados (DO ✅) e os que devem ser evitados (DON'T ❌) ao implementar recursos de acessibilidade. Esses exemplos ajudam a esclarecer boas práticas com base em fragmentos de código, ilustrações ou descrições diretas, facilitando o entendimento técnico e promovendo a construção de interfaces mais inclusivas e eficientes para todas as pessoas, especialmente aquelas com deficiência.
 ## Desenvolvimento
 
 ### Imagens
 
 ```html
-<!-- DO -->
+DO ✅
 <img src="grafico.png" alt="Gráfico de crescimento anual">
-<!-- DON'T -->
+DON'T ❌
 <img src="grafico.png">
 
-<!-- DO -->
+DO ✅
 <img src="decorativo.png" alt="">
-<!-- DON'T -->
+DON'T ❌
 <img src="decorativo.png" alt="imagem legal">
 
-<!-- DO -->
+DO ✅
 <img src="texto-promocao.png" alt="Compre 1 e leve 2 - Promoção válida até domingo">
-<!-- DON'T -->
+DON'T ❌
 <img src="texto-promocao.png">
 ```
 
 ### Vídeos e Áudios
 
 ```html
-<!-- DO -->
+DO ✅
 <video controls>
   <source src="video.mp4" type="video/mp4">
   <track kind="subtitles" src="legenda.vtt" srclang="pt" label="Português">
 </video>
-<!-- DON'T -->
+DON'T ❌
 <video controls>
   <source src="video.mp4" type="video/mp4">
 </video>
@@ -38,48 +38,48 @@
 ### Controles
 
 ```html
-<!-- DO -->
+DO ✅
 <a href="/home">Início</a>
-<!-- DON'T -->
+DON'T ❌
 <a>Início</a>
 
-<!-- DO -->
+DO ✅
 <a href="/contato" style="text-decoration: underline">Contato</a>
-<!-- DON'T -->
+DON'T ❌
 <a href="/contato" style="text-decoration: none">Contato</a>
 
-<!-- DO -->
+DO ✅
 <input onfocus="this.style.border='2px solid #00f'">
-<!-- DON'T -->
+DON'T ❌
 <input>
 
-<!-- DO -->
+DO ✅
 <button type="button">Cancelar</button>
-<!-- DON'T -->
+DON'T ❌
 <button>Cancelar</button>
 
-<!-- DO -->
+DO ✅
 <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhum skip link -->
 
-<!-- DO -->
+DO ✅
 <a href="https://externo.com" target="_blank" rel="noopener">Abrir em nova aba</a>
-<!-- DON'T -->
+DON'T ❌
 <a href="https://externo.com" target="_blank">Abrir em nova aba</a>
 
-<!-- DO -->
+DO ✅
 <select>
   <option>Selecione</option>
 </select>
-<!-- DON'T -->
+DON'T ❌
 <select onchange="window.location.href=this.value">
   <option value="/auto">Auto Redireciona</option>
 </select>
 
-<!-- DO -->
+DO ✅
 <div ontouchstart="handler()" tabindex="0">Interação por movimento com alternativa</div>
-<!-- DON'T -->
+DON'T ❌
 <div ontouchstart="handler()">Somente gesto</div>
 
 ```
@@ -87,164 +87,164 @@
 ### Formulário
 
 ```html
-<!-- DO -->
+DO ✅
 <label for="email">E-mail</label>
 <input type="email" id="email">
-<!-- DON'T -->
+DON'T ❌
 <input type="email">
 
-<!-- DO -->
+DO ✅
 <fieldset>
   <legend>Escolha uma opção</legend>
   <label><input type="radio" name="opcao"> Sim</label>
   <label><input type="radio" name="opcao"> Não</label>
 </fieldset>
-<!-- DON'T -->
+DON'T ❌
 <label><input type="radio" name="opcao"> Sim</label>
 <label><input type="radio" name="opcao"> Não</label>
 
-<!-- DO -->
+DO ✅
 <input type="text" name="nome" autocomplete="name">
-<!-- DON'T -->
+DON'T ❌
 <input type="text" name="nome">
 
-<!-- DO -->
+DO ✅
 <div class="erro" role="alert">Erro: nome é obrigatório</div>
 <form>...</form>
-<!-- DON'T -->
+DON'T ❌
 <form><div class="erro">Erro: nome é obrigatório</div>...</form>
 
-<!-- DO -->
+DO ✅
 <input id="senha" aria-describedby="requisitos">
 <div id="requisitos">A senha deve ter ao menos 8 caracteres</div>
-<!-- DON'T -->
+DON'T ❌
 <input id="senha">
 
-<!-- DO -->
+DO ✅
 <div role="alert">Cadastro realizado com sucesso</div>
-<!-- DON'T -->
+DON'T ❌
 <div class="sucesso">Cadastro realizado com sucesso</div>
 ```
 
 ### Mídia
 
 ```html
-<!-- DO -->
+DO ✅
 <video controls>
   <source src="demo.mp4" type="video/mp4">
 </video>
-<!-- DON'T -->
+DON'T ❌
 <video autoplay>
   <source src="demo.mp4" type="video/mp4">
 </video>
 
-<!-- DO -->
+DO ✅
 <button type="submit">Enviar</button>
-<!-- DON'T -->
+DON'T ❌
 <button>Enviar</button>
 
-<!-- DO -->
+DO ✅
 <video controls>
   <source src="midia.mp4">
   <button onclick="pauseVideo()">Pausar vídeo</button>
 </video>
-<!-- DON'T -->
+DON'T ❌
 <video autoplay loop>
   <source src="midia.mp4">
 </video>
 
-<!-- DO -->
+DO ✅
 <p>Transcrição: Este áudio descreve os recursos de acessibilidade disponíveis.</p>
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhum conteúdo de transcrição -->
 ```
 
 ### Semântica
 
 ```html
-<!-- DO -->
+DO ✅
 <main><section><h1>Título</h1></section></main>
-<!-- DON'T -->
+DON'T ❌
 <div><div><span style="font-size: 24px">Título</span></div></div>
 ```
 
 ### Texto
 
 ```html
-<!-- DO -->
+DO ✅
 <p>Promoção imperdível: leve 3 e pague 2</p>
-<!-- DON'T -->
+DON'T ❌
 <img src="promo-texto.png" alt="promoção imperdível">
 ```
 
 ### Teclado
 
 ```html
-<!-- DO -->
+DO ✅
 <button accesskey="s">Salvar</button>
-<!-- DON'T -->
+DON'T ❌
 <div onclick="salvar()">Salvar</div>
 
-<!-- DO -->
+DO ✅
 <div tabindex="0" onmouseover="...">Dica</div>
-<!-- DON'T -->
+DON'T ❌
 <div onmouseover="...">Dica</div>
 
-<!-- DO -->
+DO ✅
 <style>
   button:focus {
     outline: 2px solid green;
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <style>
   button:focus {
     outline: none;
   }
 </style>
 
-<!-- DO -->
+DO ✅
 <style>
   .botao:hover, .botao:focus {
     background: #333;
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <style>
   .botao:hover {
     background: #333;
   }
 </style>
 
-<!-- DO -->
+DO ✅
 <button tabindex="0">Enviar</button>
-<!-- DON'T -->
+DON'T ❌
 <div onclick="enviar()">Enviar</div>
 
-<!-- DO -->
+DO ✅
 <a href="#conteudo" class="skip-link">Pular conteúdo</a>
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhum skip link -->
 ```
 
 ### Títulos
 
 ```html
-<!-- DO -->
+DO ✅
 <h1>Sobre nós</h1><h2>Missão</h2><h3>Visão</h3>
-<!-- DON'T -->
+DON'T ❌
 <h1>Sobre nós</h1><h3>Missão</h3>
 
-<!-- DO -->
+DO ✅
 <h1>Página de Contato</h1>
-<!-- DON'T -->
+DON'T ❌
 <div style="font-size: 24px">Página de Contato</div>
 ```
 
 ### Tabelas
 
 ```html
-<!-- DO -->
+DO ✅
 <table>
   <caption>Estatísticas de uso</caption>
   <thead>
@@ -254,107 +254,107 @@
     <tr><td>Maria</td><td>20</td></tr>
   </tbody>
 </table>
-<!-- DON'T -->
+DON'T ❌
 <table>
   <tr><td>Usuário</td><td>Acessos</td></tr>
   <tr><td>Maria</td><td>20</td></tr>
 </table>
 
-<!-- DO -->
+DO ✅
 <p>Esta tabela mostra as vendas do mês por região.</p>
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhuma explicação textual -->
 ```
 
 ### Modais
 
 ```html
-<!-- DO -->
+DO ✅
 <div role="dialog" aria-modal="true">
   <button onclick="closeModal()">Fechar</button>
 </div>
-<!-- DON'T -->
+DON'T ❌
 <div class="modal">Modal sem botão de fechar</div>
 
-<!-- DO -->
+DO ✅
 <div role="dialog" aria-modal="true">
   <button onkeydown="if(event.key==='Escape'){closeModal()}">Fechar</button>
 </div>
-<!-- DON'T -->
+DON'T ❌
 <div role="dialog">Sem ESC</div>
 ```
 
 ### Mobile
 
 ```html
-<!-- DO -->
+DO ✅
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- DON'T -->
+DON'T ❌
 <!-- ausência de meta viewport -->
 
-<!-- DO -->
+DO ✅
 <style>
   body {
     overflow-x: hidden;
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <style>
   body {
     overflow-x: auto;
   }
 </style>
 
-<!-- DO -->
+DO ✅
 <button style="padding: 12px 20px;">Toque aqui</button>
-<!-- DON'T -->
+DON'T ❌
 <button style="padding: 5px 5px;">Toque aqui</button>
 
-<!-- DO -->
+DO ✅
 <style>
   .botao + .botao {
     margin-left: 1rem;
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <!-- botões colados -->
 ```
 
 ### Extras
 
 ```html
-<!-- DO -->
+DO ✅
 <marquee behavior="scroll" direction="left" aria-hidden="true"></marquee>
 <button onclick="pararConteudo()">Parar</button>
-<!-- DON'T -->
+DON'T ❌
 <marquee behavior="scroll" direction="left"></marquee>
 
-<!-- DO -->
+DO ✅
 <nav aria-label="Você está aqui">
   <ol><li><a href="/">Início</a></li><li>Página atual</li></ol>
 </nav>
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhum breadcrumb -->
 
-<!-- DO -->
+DO ✅
 <a href="/acessibilidade">Dicas de acessibilidade</a>
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhuma seção de dicas -->
 
-<!-- DO -->
+DO ✅
 <button style="width: 44px; height: 44px;">OK</button>
-<!-- DON'T -->
+DON'T ❌
 <button style="width: 20px; height: 20px;">OK</button>
 
-<!-- DO -->
+DO ✅
 <label for="captcha">Resolva: 2+2 = ?</label>
 <input id="captcha" type="text">
-<!-- DON'T -->
+DON'T ❌
 <img src="captcha.png">
 
-<!-- DO -->
+DO ✅
 <input type="search" placeholder="Buscar no site">
-<!-- DON'T -->
+DON'T ❌
 <!-- nenhum campo de busca -->
 ```
 
@@ -364,46 +364,46 @@
 ### Aparencia
 
 ```html
-<!-- DO -->
+DO ✅
 <p>Pressione o botão com o ícone de engrenagem <strong>localizado acima</strong> para abrir as configurações.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Pressione o botão vermelho à direita.</p>
 
-<!-- DO -->
+DO ✅
 <p>Os campos obrigatórios estão marcados com um asterisco *</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Campos obrigatórios estão marcados em vermelho.</p>
 
-<!-- DO -->
+DO ✅
 <div style="font-size: 1.2em;">Texto que se adapta ao zoom</div>
-<!-- DON'T -->
+DON'T ❌
 <div style="font-size: 12px;">Texto fixo</div>
 
-<!-- DO -->
+DO ✅
 <p style="max-width: 600px;">Este parágrafo possui no máximo 80 caracteres por linha e facilita a leitura.</p>
-<!-- DON'T -->
+DON'T ❌
 <p style="max-width: 1000px; text-align: justify;">Texto com linhas muito longas e alinhamento justificado prejudica a leitura.</p>
 
-<!-- DO -->
+DO ✅
 <button>
   <i class="icon-download"></i> Baixar
 </button>
-<!-- DON'T -->
+DON'T ❌
 <button><i class="icon-download"></i></button>
 
-<!-- DO -->
+DO ✅
 <button style="min-height: 24px; min-width: 24px;">Enviar</button>
-<!-- DON'T -->
+DON'T ❌
 <button style="width: 16px; height: 16px;"></button>
 
-<!-- DO -->
+DO ✅
 <style>
   .escondido {
     position: absolute;
     left: -9999px;
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <style>
   .escondido {
     display: none;
@@ -414,7 +414,7 @@
 ### Animação
 
 ```html
-<!-- DO -->
+DO ✅
 <style>
   @media (prefers-reduced-motion: reduce) {
     .animar {
@@ -422,60 +422,60 @@
     }
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <style>
   .animar {
     animation: bounce 2s infinite;
   }
 </style>
 
-<!-- DO -->
+DO ✅
 <div class="marquee" aria-hidden="true"></div>
 <button onclick="pausarAnimacao()">Pausar animação</button>
-<!-- DON'T -->
+DON'T ❌
 <div class="marquee"></div>
 ```
 
 ### Contraste de cores
 
 ```html
-<!-- DO -->
+DO ✅
 <p style="color: #000; background: #fff;">Texto com contraste adequado</p>
-<!-- DON'T -->
+DON'T ❌
 <p style="color: #aaa; background: #fff;">Texto com pouco contraste</p>
 
-<!-- DO -->
+DO ✅
 <h1 style="color: #111; font-size: 2em;">Título destacado</h1>
-<!-- DON'T -->
+DON'T ❌
 <h1 style="color: #bbb; font-size: 2em;">Título apagado</h1>
 
-<!-- DO -->
+DO ✅
 <i class="icone" style="color: #222;"></i>
-<!-- DON'T -->
+DON'T ❌
 <i class="icone" style="color: #ccc;"></i>
 
-<!-- DO -->
+DO ✅
 <input style="border: 2px solid #333">
-<!-- DON'T -->
+DON'T ❌
 <input style="border: 1px solid #ddd">
 
-<!-- DO -->
+DO ✅
 <div style="background: url('imagem.jpg'); color: #fff; text-shadow: 1px 1px #000;">
   Texto sobre imagem
 </div>
-<!-- DON'T -->
+DON'T ❌
 <div style="background: url('imagem.jpg'); color: #fff;">
   Texto sobre imagem
 </div>
 
-<!-- DO -->
+DO ✅
 <style>
   ::selection {
     background: #000;
     color: #fff;
   }
 </style>
-<!-- DON'T -->
+DON'T ❌
 <style>
   ::selection {
     background: #eee;
@@ -489,35 +489,35 @@
 ### Termos e textos
 
 ```html
-<!-- DO -->
+DO ✅
 <p>O site oferece recursos para <strong>pessoas com deficiência visual</strong>.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>O site oferece recursos para deficientes.</p>
 
-<!-- DO -->
+DO ✅
 <p>Clique no botão para continuar.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Não perca tempo! Clique agora mesmo!</p>
 
-<!-- DO -->
+DO ✅
 <p>Use palavras simples e frases curtas.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Em virtude das circunstâncias previamente mencionadas, recomendamos enfaticamente...</p>
 ```
 
 ### Ícones
 
 ```html
-<!-- DO -->
+DO ✅
 <button aria-label="Salvar">
   💾 <span>Salvar</span>
 </button>
-<!-- DON'T -->
+DON'T ❌
 <button>💾</button>
 
-<!-- DO -->
+DO ✅
 <i class="icon-seta" aria-label="Ir para a próxima página"></i>
-<!-- DON'T -->
+DON'T ❌
 <i class="icon-seta"></i>
 ```
 
@@ -528,9 +528,9 @@
 ### Hiperlinks
 
 ```html
-<!-- DO -->
+DO ✅
 <a href="/relatorio">Baixar relatório em PDF</a>
-<!-- DON'T -->
+DON'T ❌
 <a href="/relatorio">Clique aqui</a>
 ```
 
@@ -539,46 +539,46 @@
 ###  Primeiros Passos
 
 ```html
-<!-- DO -->
+DO ✅
 <p>Incluímos uma persona representando <strong>uma pessoa com deficiência visual</strong> no planejamento do projeto.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Definimos um usuário genérico sem considerar deficiência alguma.</p>
 
-<!-- DO -->
+DO ✅
 <p>Modelamos também <strong>personas com deficiência física, neurodiversidade e analfabetismo funcional</strong>.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Consideramos apenas usuários que usam o sistema com mouse e teclado.</p>
 ```
 
 ### Conscientização
 
 ```html
-<!-- DO -->
+DO ✅
 <p>Apresentamos dados do IBGE à equipe, como: "Cerca de 18,6% da população brasileira possui algum tipo de deficiência".</p>
-<!-- DON'T -->
+DON'T ❌
 <p>A equipe não foi orientada sobre o público com deficiência.</p>
 
-<!-- DO -->
+DO ✅
 <p>Discutimos a legislação vigente, como a <strong>Convenção sobre os Direitos das Pessoas com Deficiência</strong>.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Ignoramos normas legais e diretrizes internacionais.</p>
 
-<!-- DO -->
+DO ✅
 <p>Estimamos o esforço adicional de forma realista e mostramos exemplos de como acessibilidade gera mais alcance.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Afirmamos que acessibilidade só dá trabalho e não vale a pena.</p>
 ```
 
 ### Planejamento
 
 ```html
-<!-- DO -->
+DO ✅
 <p>Definimos atividades com metas baseadas nas diretrizes <strong>WCAG nível A e AA</strong>.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Não incluímos nenhuma atividade específica relacionada à acessibilidade.</p>
 
-<!-- DO -->
+DO ✅
 <p>Alocamos recursos como treinamentos, revisores e ferramentas de validação de acessibilidade.</p>
-<!-- DON'T -->
+DON'T ❌
 <p>Acreditamos que os desenvolvedores resolverão tudo sozinhos no final do projeto.</p>
 ```

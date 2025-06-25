@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Ferramentas de Acessibilidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .options {
+      margin-top: 0.5rem;
+    }
+
+    .options input {
+      margin-right: 0.5rem;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #e8f6ff;
+      border-left: 4px solid #3498db;
+      font-weight: bold;
+    }
+
+    a {
+      color: #2c3e50;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Ferramentas de Acessibilidade</h1>
+
+  <form id="form">
+    <label>1. Você está testando um site ou um aplicativo Android?</label>
+    <div class="options">
+      <input type="radio" name="plataforma" value="web"> Site<br>
+      <input type="radio" name="plataforma" value="android"> Android
+    </div>
+
+    <label>2. Precisa verificar contraste de cores?</label>
+    <div class="options">
+      <input type="radio" name="contraste" value="sim"> Sim<br>
+      <input type="radio" name="contraste" value="nao"> Não
+    </div>
+
+    <label>3. Você quer um leitor de tela para testes?</label>
+    <div class="options">
+      <input type="radio" name="leitor" value="sim"> Sim<br>
+      <input type="radio" name="leitor" value="nao"> Não
+    </div>
+
+    <button type="submit">Ver recomendação</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const plataforma = document.querySelector('input[name="plataforma"]:checked')?.value;
+      const contraste = document.querySelector('input[name="contraste"]:checked')?.value;
+      const leitor = document.querySelector('input[name="leitor"]:checked')?.value;
+
+      let recomendacoes = [];
+
+      if (plataforma === "android") {
+        recomendacoes.push(`<a href="https://github.com/google/Accessibility-Test-Framework-for-Android" target="_blank">Framework de Testes de Acessibilidade (Android)</a>`);
+      }
+
+      if (plataforma === "web") {
+        recomendacoes.push(`<a href="https://wave.webaim.org/" target="_blank">WAVE - Web Accessibility Evaluation Tool</a>`);
+        recomendacoes.push(`<a href="https://github.com/dequelabs/axe-core" target="_blank">AXE - Accessibility Engine</a>`);
+        recomendacoes.push(`<a href="https://developer.chrome.com/docs/lighthouse" target="_blank">Lighthouse - Google</a>`);
+      }
+
+      if (contraste === "sim") {
+        recomendacoes.push(`<a href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM Contrast Checker</a>`);
+      }
+
+      if (leitor === "sim") {
+        recomendacoes.push(`<a href="https://www.tecassistiva.com.br/catalogo/jaws/" target="_blank">JAWS - Leitor de telas para Windows</a>`);
+      }
+
+      if (recomendacoes.length === 0) {
+        document.getElementById("resultado").innerHTML = "Nenhuma ferramenta específica foi recomendada com base nas respostas.";
+      } else {
+        document.getElementById("resultado").innerHTML = "<p>Recomendações de ferramentas:</p><ul><li>" + recomendacoes.join("</li><li>") + "</li></ul>";
+      }
+    });
+  </script>
+</body>
+</html>

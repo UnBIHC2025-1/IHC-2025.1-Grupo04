@@ -4,9 +4,9 @@
 testes e padronizações. Também é importante que a equipe saiba como as pessoas com deficiência usam os sítios web e aplicativos". Nesse caso, foram incluídas técnicas relacionadas ao desenvolvimento e também formas de verificar.
 
 ## Imagens
-- [x] <b> Adicionar ``` alt ``` </b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a id="TEC1" href="#RP1">[1]</a>
-- [ ] <b> Adicionar ``` alt="" ``` </b> para imagens decorativas que não tem significado. <a id="TEC1" href="#RP1">[1]</a>
-- [ ] <b> Incluir a descrição no ``` alt ```</b> para imagens que contém texto. <a id="TEC1" href="#RP1">[1]</a>
+- [x] **Adicionar `alt` para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso.** <a id="TEC1" href="#RP1">[1]</a>
+- [ ] **Adicionar `alt=""` para imagens decorativas que não têm significado.** <a id="TEC1" href="#RP1">[1]</a>
+- [ ] **Incluir a descrição no `alt` para imagens que contêm texto.** <a id="TEC1" href="#RP1">[1]</a>
 
 ## Vídeos e Áudios
 - [ ] <b> Adicionar legendas</b> para áudio em vídeos existentes. <a id="TEC2" href="#RP2">[2]</a>

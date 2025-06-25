@@ -24,6 +24,9 @@ nav:
   - Ferramentas:
     - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 
+  - Conscientização: 
+    - Empatia e Educação: 'empatia/empatia.md'
+
 theme:
   name: readthedocs
   locale: pt_BR

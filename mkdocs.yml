@@ -21,6 +21,8 @@ nav:
 
   - Do e Donot: 'do-donot/do-donot.md'
 
+  - Empatia e Educação: 'empatia/empatia.md'
+
 theme:
   name: material
   language: pt-BR

@@ -33,6 +33,58 @@ ou estão em texto, têm controle equivalente maior, ou seu tamanho é essencial
 - [ ] <b> Verificar o texto</b> que se sobrepõe a imagens ou vídeos. <a id="TEC9" href="#RP9">[9]</a>
 - [ ] <b> Verificar ```::selection``` cores</b> personalizadas. <a id="TEC9" href="#RP9">[9]</a>
 
+<canvas id="graficoChecklist" style="max-width: 300px; margin: auto;"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  function contarCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const feitos = [...checkboxes].filter(cb => cb.checked).length;
+    const pendentes = (checkboxes.length) - 3 - feitos;
+    return [feitos, pendentes];
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('graficoChecklist').getContext('2d');
+
+    const [feitos, pendentes] = contarCheckboxes();
+
+    const chart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Selecionados', 'Não Selecionados'],
+        datasets: [{
+          data: [feitos, pendentes],
+          backgroundColor: ['#4cae4f', '#992a23']
+        }]
+      },
+      options: {
+        responsive: true,
+        width: 300,
+        height: 300,  
+        plugins: {
+          legend: {
+            position: 'bottom'
+          },
+          title: {
+            display: true,
+            text: 'Contagem de Marcações'
+          }
+        }
+      }
+    });
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const [atualFeitos, atualPendentes] = contarCheckboxes();
+        chart.data.datasets[0].data = [atualFeitos, atualPendentes];
+        chart.update();
+      });
+    });
+  });
+</script>
+
+
 ## Referências Bibliograficas
 
 > <a id="RP1" href="#TEC1">1.</a> WCAG 2.2 Understanding Docs. SC 1.4.1 Use of Color (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html). Acesso em: 9 Mai. 2024.

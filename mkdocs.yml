@@ -19,8 +19,9 @@ nav:
 
   - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 
-  - Conscientização: 
-    - Empatia e Educação: 'empatia/empatia.md'
+  - Do e Donot: 'do-donot/do-donot.md'
+
+  - Empatia e Educação: 'empatia/empatia.md'
 
 theme:
   name: material

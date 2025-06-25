@@ -51,6 +51,34 @@ Para tornar a acessibilidade uma parte natural da cultura de desenvolvimento:
 ## Depoimentos Reais 
 
 
----
+###  Depoimento – Alexandre Ohkawa (WPT)
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/pLNoYOxP-9U"
+title="WPT | Depoimento Alexandre Ohkawa" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+**Legenda:**  
+"Alexandre Ohkawa, arquiteto, surdo e professor de Libras, fala sobre a importância da acessibilidade digital existir para os surdos, surdocegos ou pessoas com daltonismo. Ele ainda dá algumas dicas práticas para as pessoas entenderem melhor esse contexto."
+
+### Depoimento - Renato Kimura (WPT)
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/biv74pYXQWk" title="WPT | Depoimento Renato Kimura (com audiodescrição)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**Legenda:**
+“Pensar em uma internet acessível pra todo mundo é a gente garantir que as pessoas, com ou sem deficiência, vão ter acesso a qualquer tipo de informação, em qualquer contexto.”
+
+## Depoimento - Valter Lenine (WPT)
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/BWa19aYVBRM?list=PLGBeQBPkoih47wcbPqc7A2ll47FTBb7y-" title="WPT | Depoimento Valter Lenine (com audiodescrição)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**Legenda:**
+“Sou usuário também de Libras e um surdo oralizado, mas, principalmente, eu sinto a necessidade de sites que utilizem legendas em relação aos conteúdos, principalmente de vídeos.”
+
+
+### Fontes
+
+https://mwpt.com.br/depoimentos/
 
 > _Esta página faz parte do Pocket de Acessibilidade desenvolvido pelo Grupo 04 – IHC/UnB 2025.1_

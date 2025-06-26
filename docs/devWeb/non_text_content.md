@@ -30,7 +30,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] <b> Adicionar ``` autocomplete ```</b> para campos de entrada. <a id="TEC10" href="#RP10">[10]</a>
 - [ ] <b> Exibir ``` errors ``` </b> (erros) de entrada acima do formulário, após envio. <a id="TEC11" href="#RP11">[11]</a>
 - [ ] <b> Adicionar ``` aria-describedby ```</b> para os campos de entrada. <a id="TEC11" href="#RP11">[11]</a>
-- [ ] <b> E ibir mensagens de erro e sucesso</b> não só visualmente. <a id="TEC5" href="#RP5">[5]</a>
+- [ ] <b> Exibir mensagens de erro e sucesso</b> não só visualmente. <a id="TEC5" href="#RP5">[5]</a>
 
 ## Mídia
 - [ ] <b> Impedir ``` autoplay ```</b> para vídeos e audios maiores que 3 segundos. <a id="TEC12" href="#RP12">[12]</a>

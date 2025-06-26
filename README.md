@@ -7,7 +7,7 @@
 
 ## Introdução
 
-Este repositório tem como propósito fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento de software, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos. 
+Este repositório tem como propósito fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento de software, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos. Além disso, busca oferecer ferramentas para ajudar nesse processo, como também, elencá-las num ranking de acordo com a situação necessária. 
 
 ## Chek.Acess
 

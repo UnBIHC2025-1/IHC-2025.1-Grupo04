@@ -72,7 +72,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 
 ## Modais
 - [ ] Deve ser <b> fácil fechar </b>.<a id="TEC19" href="#RP19">[19]</a>
-- [ ] Permiti o <b> uso da tecla escape ``` ESC ```</b>.</b><a id="TEC19" href="#RP19">[19]</a>
+- [ ] Permite o <b> uso da tecla escape ``` ESC ```</b>.</b><a id="TEC19" href="#RP19">[19]</a>
 - [ ] A interação é  uma <b> tarefa simples</b>.</b><a id="TEC19" href="#RP19">[19]</a>
 - [ ] <b> Evita </b> modais em <b> tela cheia </b>.</b><a id="TEC19" href="#RP19">[19]</a>
 - [ ] <b> Não abrir um modal a partir de outro modal </b>.</b><a id="TEC19" href="#RP19">[19]</a>
@@ -84,7 +84,7 @@ testes e padronizações. Também é importante que a equipe saiba como as pesso
 - [ ] <b> Garantir </b> espaço suficiente entre elementos interativos. <a id="TEC7" href="#RP7">[7]</a>
 
 ## Ferramentas e extras
-- [ ] Permiti <b> pausar, parar ou ocultar conteúdo em movimento </b>.
+- [ ] Permite <b> pausar, parar ou ocultar conteúdo em movimento </b>.
 - [ ] Usar <b> Breadcrumbs </b> informando a localização atual nas páginas.
 - [ ] Colocar página ou <b> área de esclarecimento de dúvidas e dicas de acessibilidade </b>.
 - [ ] Áreas clicáveis com no mínimo <b> 44px (pixels) de altura e 44px de largura </b>.
